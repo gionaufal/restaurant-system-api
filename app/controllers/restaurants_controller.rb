@@ -15,7 +15,6 @@ class RestaurantsController < ApplicationController
     render json: @restaurant, status: :ok
   end
 
-
   def update
     @restaurant.update(restaurant_params)
     head :no_content
