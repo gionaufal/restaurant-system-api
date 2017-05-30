@@ -1,24 +1,21 @@
-# README
+# Restaurant System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple API to register Restaurants and their Dishes. It's made to interact with any front end.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+* Ruby 2.3.1
 
-* System dependencies
+* Rails 5.1.1
 
-* Configuration
+* PostgreSQL
 
-* Database creation
+## To run locally
 
-* Database initialization
+* Fork the repo
 
-* How to run the test suite
+* `git clone git@github.com:<yourusername>/restaurant-system-api.git`
 
-* Services (job queues, cache servers, search engines, etc.)
+* `bundle install`
 
-* Deployment instructions
-
-* ...
+* `rails s`
