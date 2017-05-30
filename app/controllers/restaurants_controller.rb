@@ -3,16 +3,16 @@ class RestaurantsController < ApplicationController
 
   def index
     @restaurants = Restaurant.all
-    render json: @restaurants, status: :ok
+    render json: @restaurants, status: :ok, callback: params['callback']
   end
 
   def create
     @restaurant = Restaurant.create!(restaurant_params)
-    render json: @restaurant, status: :created
+    render json: @restaurant, status: :created, callback: params['callback']
   end
 
   def show
-    render json: @restaurant, status: :ok
+    render json: @restaurant, status: :ok, callback: params['callback']
   end
 
   def update
